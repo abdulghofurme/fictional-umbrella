@@ -62,6 +62,25 @@ class HomePage extends StatelessWidget {
                   child: Text('+'),
                 ),
               ],
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                //   content: Text('Hello'),
+                //   action: SnackBarAction(
+                //     label: "Label",
+                //     onPressed: () {},
+                //   ),
+                // ));
+                Get.snackbar(
+                  'Hai',
+                  'Ini adalah pesannya',
+                  snackPosition: SnackPosition.BOTTOM,
+                  backgroundColor: Colors.black,
+                  colorText: Colors.white,
+                );
+              },
+              child: Text('Snackbar'),
             )
           ],
         ),
